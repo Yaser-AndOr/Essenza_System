@@ -40,7 +40,6 @@ namespace ImpresionPDF
                         for (int x = 0; x < Listas.NombreCliente.Count; x++)
                         {
                             actualizar += $"{Listas.NEmp[x]},{Listas.AEmp[x]},{Listas.CEmp[x]},{Listas.Pass[x]}\n";
-                            MessageBox.Show(actualizar);
                         }
                         csv.reescribir($"{csv.raiz}\\Data\\Login\\Login", actualizar);
                     }

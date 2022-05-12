@@ -67,7 +67,6 @@ namespace ImpresionPDF
                     {
                         actualizar += $"{Listas.Codigo[x]},{Listas.Nombre[x]},{Listas.Precio[x]}\n";
                     }
-                    MessageBox.Show(actualizar);
                     csv.reescribir($"{csv.raiz}\\Data\\Productos\\Productos", actualizar);
                     dgvfull();
                 }

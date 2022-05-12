@@ -57,7 +57,6 @@ namespace ImpresionPDF
                         for (int x = 0; x < Listas.Nombre.Count; x++)
                         {
                             actualizar += $"{Listas.Codigo[x]},{Listas.Nombre[x]},{Listas.Precio[x]}\n";
-                            MessageBox.Show(actualizar);
                         }
                         csv.reescribir($"{csv.raiz}\\Data\\Productos\\Productos", actualizar);
                     }

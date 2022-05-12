@@ -66,7 +66,6 @@ namespace ImpresionPDF
                     for (int x = 0; x < Listas.NombreCliente.Count; x++)
                     {
                         actualizar += $"{Listas.NombreCliente[x]},{Listas.NumeroCliente[x]},{Listas.CorreoCliente[x]}\n";
-                        MessageBox.Show(actualizar);
                     }
                     csv.reescribir($"{csv.raiz}\\Data\\Clientes\\Clientes", actualizar);
                     dgvfull();
